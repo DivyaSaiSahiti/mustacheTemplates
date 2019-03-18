@@ -1,0 +1,23 @@
+{
+    "title_en": "ONE DIRECTION",
+    "title": "ఒక దిశలో",
+    "cover_image": "first.jpg",
+    "pages_count": 2,
+    "pages": [
+        {
+            "english": "One Direction is the biggest boy band of all time.",
+            "telugu": "అన్ని సమయాలలో అతిపెద్ద బాయ్ బ్యాండ్..",
+            "image": "second.jpg"
+        },
+        {
+            "english": "Their songs are too good.",
+            "telugu": "వారి పాటలు చాలా మంచివి.",
+            "image": "third.jpg"
+        },
+        {
+             "english":"ZAYN left the band.",
+             "telugu":"జేన్ బ్యాండ్ను విడిచిపెట్టాడ.ు",
+             "image":"zayn.jpg"
+        }
+    ]
+}
