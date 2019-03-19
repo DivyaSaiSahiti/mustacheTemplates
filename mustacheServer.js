@@ -29,6 +29,15 @@ function getmypage(Number){
   else if(Number >= 2){
     var pages = data1.pages;
     var currentPage = pages[Number - 2];
+    if(currentPage == null){
+      var endData = { "endPage":"wait for the next....will be back soon !!!",
+                     "previous_page_url":Number-1,
+                    };
+      var page = fs.readFileSync('view/endpage.mustache','utf8',  (err) => {if (err) throw err;});
+      var myPage = template.render(page.toString(), endData);
+      return(myPage);
+    }
+    else {
     var pageData = {"telugu":currentPage.telugu,
                   "english":currentPage.english,
                   "next_page_url":Number -1 +2,
@@ -40,7 +49,8 @@ function getmypage(Number){
     console.log(myPage);
     return (myPage);
   }
-} 
+  }
+}
 app.listen(8080, () => {
   console.log('server started');  
 });
